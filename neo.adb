@@ -88,8 +88,8 @@ package body Neo is
   protected body Safe_Counter is
       function Get        return Int     is (Count);
       procedure Set       (Val : Int)    is begin Count := Val;            end;
-      procedure Increment (Amount : Int) is begin Count := Count - Amount; end;
-      procedure Decrement (Amount : Int) is begin Count := Count + Amount; end;
+      procedure Increment (Amount : Int) is begin Count := Count + Amount; end;
+      procedure Decrement (Amount : Int) is begin Count := Count - Amount; end;
       procedure Increment                is begin Count := Count + 1;      end;
       procedure Decrement                is begin Count := Count - 1;      end;
     end;
