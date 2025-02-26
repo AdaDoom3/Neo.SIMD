@@ -303,9 +303,9 @@ package Neo is
   -----------
 
   kB : constant Int_Ptr := 1024;
-  MB : constant Int_Ptr := kB ** 2;
-  GB : constant Int_Ptr := MB ** 2;
-  TB : constant Int_Ptr := GB ** 2;
+  MB : constant Int_Ptr := kB * kB;
+  GB : constant Int_Ptr := MB * kB;
+  TB : constant Int_Ptr := GB * kB;
 
   ---------------
   -- Debugging --
